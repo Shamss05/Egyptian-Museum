@@ -87,43 +87,32 @@ function showSearchInput() {
 document.addEventListener("DOMContentLoaded", function () {
     const toggleModeButton = document.getElementById("toggleModeButton");
     const body = document.body;
-
-    // Event listener for toggle mode button click
-    toggleModeButton.addEventListener("click", function () {
-        body.classList.toggle("dark-mode");
-
-        // Toggle the image source between moon and sun icons
-        const imgmoon = document.querySelector(".imgmoon");
-        if (body.classList.contains("dark-mode")) {
-            imgmoon.src = "moon.jpg";
-        } else {
-            imgmoon.src = "sun.jpg";
-        }
-    });
 });
-// JavaScript code in main.js
+var button = document.getElementById('mybutton');
+var image = document.getElementById('imgbutton');
 
-// Function to move up the specified section
-function moveSectionUp(sectionId) {
-    const section = document.querySelector(sectionId);
-    section.style.transform = "translateY(-20px)"; // Move up by 20 pixels, adjust as needed
-}
+// Add a click event listener to the button
+button.addEventListener('click', function() {
+    // Change the image source
+    image.src = "moon.jpg";
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const button = document.getElementById("mybutton");
+    const image = document.getElementById("imgbutton");
+    let isDarkMode = false;
 
-// Function to move down the specified section
-function moveSectionDown(sectionId) {
-    const section = document.querySelector(sectionId);
-    section.style.transform = "translateY(0)"; // Move down to original position
-}
+    // Add a click event listener to the button
+    button.addEventListener("click", function() {
+        // Toggle dark mode
+        isDarkMode = !isDarkMode;
 
-// Attach event listeners to each section
-document.addEventListener("DOMContentLoaded", function() {
-    const sections = document.querySelectorAll(".seca1, .seca2, .seca3, .seca4, .seca5, .seca6, .seca7, .seca8");
-    sections.forEach(section => {
-        section.addEventListener("mouseover", function() {
-            moveSectionUp(#${section.id});
-        });
-        section.addEventListener("mouseout", function() {
-            moveSectionDown(#${section.id});
-        });
+        // Change the image source based on mode
+        if (isDarkMode) {
+            image.src = "moon.jpg"; // Dark mode image
+            document.body.style.backgroundColor ="burlywood"; // Dark mode background color
+        } else {
+            image.src = "sun.jpg"; // Light mode image
+            document.body.style.backgroundColor = "beige"; // Light mode background color
+        }
     });
 });
