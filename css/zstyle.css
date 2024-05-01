@@ -58,7 +58,7 @@
     z-index: 1;
 }
 .zbody{
-    background-image: url(../images/dsc_0059.jpg);
+    background-image: url(../media/dsc_0059.jpg);
     background-size: cover;
     /* backdrop-filter: blur(5px); */
     background-repeat: no-repeat;
@@ -70,7 +70,7 @@
 .head{
     font-style: italic;
     background-color: rgba(255, 228, 196, 0.767);
-    background-image: url(../images/g75a3364.jpg);
+    background-image: url(../media/g75a3364.jpg);
     text-align: center;
     padding: 1px 0px 1px ;
 }
@@ -87,7 +87,7 @@
 .ztable1{
      
     box-shadow: 2px 2px 12px rgba(228, 177, 115, 0.767), -1px -1px 8px rgba(228, 177, 115, 0.767);
-    background-image: url(../images/images-Copy.jpg);
+    background-image: url(../media/images-Copy.jpg);
     /* background-color: #e1a863b5; */
     background-size: cover;
     background-repeat: no-repeat;
