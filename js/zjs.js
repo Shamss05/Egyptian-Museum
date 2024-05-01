@@ -52,43 +52,43 @@ function out5(){
 // photo transform
 function changeimage1(zph1) {
     var image = document.getElementById("zph1"); // Get the image element using its ID
-    image.src = "images/3.jpg";
+    image.src = "media/3.jpg";
 }
 function changeimage2(zph1){
     var image = document.getElementById("zph1");
-    image.src = "images/dsc.jpg";
+    image.src = "media/dsc.jpg";
 }
 function changeimage3(zph2) {
     var image = document.getElementById("zph2"); // Get the image element using its ID
-    image.src = "images/dsc_0059.jpg";
+    image.src = "media/dsc_0059.jpg";
 }
 function changeimage4(zph2){
     var image = document.getElementById("zph2");
-    image.src = "images/dsc_0040.jpg";
+    image.src = "media/dsc_0040.jpg";
 }
 function changeimage5(zph3) {
     var image = document.getElementById("zph3"); // Get the image element using its ID
-    image.src = "images/g75a3520.jpg";
+    image.src = "media/g75a3520.jpg";
 }
 function changeimage6(zph3){
     var image = document.getElementById("zph3");
-    image.src = "images/g75a3519.jpg";
+    image.src = "media/g75a3519.jpg";
 }
 function changeimage7(zph4) {
     var image = document.getElementById("zph4"); // Get the image element using its ID
-    image.src = "images/g75a3369.jpg";
+    image.src = "media/g75a3369.jpg";
 }
 function changeimage8(zph4){
     var image = document.getElementById("zph4");
-    image.src = "images/g75a3364.jpg";
+    image.src = "media/g75a3364.jpg";
 }
 function changeimage9(zph5) {
     var image = document.getElementById("zph5"); // Get the image element using its ID
-    image.src = "images/3 (1).jpg";
+    image.src = "media/3 (1).jpg";
 }
 function changeimage10(zph5){
     var image = document.getElementById("zph5");
-    image.src = "images/image1.jpeg";
+    image.src = "media/image1.jpeg";
 }
 //dark mode
 // let dlz1 = document.getElementById("dlz1");
