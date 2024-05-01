@@ -1,31 +1,13 @@
 /* Resetting default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-style:oblique;
-}
 
 /* Body styles */
-body {
+.qeh {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0; 
-  
-
-    
+     
+    font-style:oblique;
+    background-color:beige;
 }
 
-/* Header styles 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}*/
-
-/*h1 {
-    margin-bottom: 20px;
-}*/
 
 /* Navigation styles */
 .navG {
@@ -98,20 +80,8 @@ header {
     margin-left: 630px;
     margin-top: 20px;
 }
-/* Dark mode */
-.dark-mode {
-    background-color:burlywood;
-    color: #ffffff;
-    
-}
-.dark-mode .museum {
-    background-color:blanchedalmond; /* Dark background color for the sections */
-}
 
 
-body{
-    background-color: antiquewhite;
-}
 
 /* Museum section styles */
 .museum {
