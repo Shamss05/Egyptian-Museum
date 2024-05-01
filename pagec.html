@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script src="https://kit.fontawesome.com/72f9e36bd3.js" crossorigin="anonymous"></script>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/pagec.css">
+   <title>sharm el sheikh musuem</title>
+   <script src="js/all.js"></script>
+</head>
+<body id="BODY1">
+    <div>
+        <!-- nav bar -->
+        <nav class="navG">
+            <div id="logoG">
+                <img src="images/logo.png" alt="logo" class="logoG">
+                <p>Egyptian Treasures</p>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html" onmouseover="over1()" onmouseout="out1()" id="icon1G">Home</a></li>
+                    <li><a href="bookticketz.html" onmouseover="over2()" onmouseout="out2()" id="icon2G">Tickets</a></li>
+                    <li><a href="aboutusc.html" onmouseover="over3()" onmouseout="out3()" id="icon3G">About</a></li>
+                    <li><a href="logine.html" onmouseover="over4()" onmouseout="out4()" id="icon4G">Login</a></li>
+                </ul>
+            </div>
+            <div class="iconsG">
+                <a href="registerb.html"><img src="images/person_icon.png" alt="person icon" class="personiconG"></a>
+                <a href="searchg.html"><img src="images/search_icon.png" alt="search icon" class="searchiconG"></a>
+            </div>
+        </nav>
+</div> 
+<br><br><br><br><br><br><br>
+<div class="search">
+    <h1>musuem monuments</h1>
+    <input type="text" name="" id="find" placeholder="search for sharm el sheikh museum,hatshpsut head,tjay and naya,head of Thutmose-I,wife of nakhtamin" onkeyup="search()">
+    </div>
+    <script type="text/javascript">
+        function search() {
+        let filter = document.getElementById('find').value.toUpperCase();
+        let item = document.querySelectorAll('.card__articlec');
+        let l = document.getElementsByTagName('h2');
+        for(var i = 0;i<=l.length;i++){
+        let a=item[i].getElementsByTagName('h2')[0];
+        let value=a.innerHTML || a.innerText || a.textContent;
+        if(value.toUpperCase().indexOf(filter) > -1) {
+        item[i].style.display="";
+        }
+        else
+        {
+        item[i].style.display="none";
+        }
+        }
+        }
+        // nav bar and footer js
+function over1(){
+    document.getElementById("icon1G").style.color="goldenrod";
+}
+function over2(){
+    document.getElementById("icon2G").style.color="goldenrod";
+}
+function over3(){
+    document.getElementById("icon3G").style.color="goldenrod";
+}
+function over4(){
+    document.getElementById("icon4G").style.color="goldenrod";
+}
+function over5(){
+    document.getElementById("icon5G").style.color="goldenrod";
+}
+function out1(){
+    document.getElementById("icon1G").style.color="white";
+}
+function out2(){
+    document.getElementById("icon2G").style.color="white";
+}
+function out3(){
+    document.getElementById("icon3G").style.color="white";
+}
+function out4(){
+    document.getElementById("icon4G").style.color="white";
+}
+function out5(){
+    document.getElementById("icon5G").style.color="white";
+}
+        </script>
+   <div class="containerc">
+      <div class="card__containerc">
+         <article class="card__articlec">
+            <img src="https://egymonuments.gov.eg/media/6246/e68724bf-2cfd-463f-931b-1b8f49d822ad.jpg?center=0.5,0.50232558139534889&mode=crop&width=645&height=423&rnd=133566124450000000" alt="image" class="card__img">
+            <div class="card__datac">
+                <h2 class="text-titlec"> sharm el sheikh museum</h2> <!-- same as card title -->
+                <span class="card__descriptionc"> The museum’s display scenario broadly reflects the different aspects of human 
+                    civilization and culture in general, </span>
+                <a href="http://www.thearchaeologist.org/blog/meet-the-new-sharm-el-sheikh-national-museum-in-sinai-egypt" class="card__buttonc">Read More</a>
+               
+            </div>
+         </article>
+
+         <article class="card__articlec">
+            <img src="https://egymonuments.gov.eg/media/6340/sh21h.jpg?center=0.59712230215827333,0.56557377049180324&mode=crop&width=645&height=423&rnd=132581519550000000" alt="image" class="card__img">
+
+            <div class="card__datac">
+                <h2 class="text-titlec">Queen Hatshepsut head</h2>
+                <span class="card__descriptionc"> Head an Osirid (mummiform) statue of Queen Hatshepsut that stood in front of the 
+                    pillars of the upper colonnade of her funerary temple. </span>
+                <a href="http://en.wikipedia.org/wiki/Hatshepsut"  class="card__buttonc">Read More</a>
+            </div>
+           
+         </article>
+
+         <article class="card__articlec">
+            <img src="https://egymonuments.gov.eg/media/6350/sh21c.jpg?anchor=center&mode=crop&width=645&height=423&rnd=132581519550000000" alt="image" class="card__img">
+
+            <div class="card__datac">
+                <h2 class="text-titlec"> Head of Thutmose I</h2> <!-- same as card title -->
+                <span class="card__descriptionc">Head of an Osirian (mummiform) statue of King Thutmose I,  father of Queen Hatshepsut</span>
+                <a href="http://www.britannica.com/biography/Thutmose-I" class="card__buttonc">Read More</a>
+            </div>
+         </article>
+         <article class="card__articlec">
+            <img src="https://egymonuments.gov.eg/media/6364/7.jpg?center=0.38541666666666669,0.60655737704918034&mode=crop&width=645&height=423&rnd=133062518070000000" alt="image" class="card__img">
+
+            <div class="card__datac">
+                <h2 class="text-titlec">Pair Statue of Tjay and Naya</h2> 
+                <span class="card__descriptionc">This excellently preserved statue depicts the couple seated</span>
+               <!-- same as card title -->
+                <a href="http://www.egypttoday.com/Article/4/119164/All-what-you-need-to-know-about-the-pair-statue"  class="card__buttonc">Read More</a>
+            </div>
+           
+            
+         </article>
+         <article class="card__articlec">
+            <img src="https://egymonuments.gov.eg/media/6365/106988272_3208355279210100_5023352238258796523_n.jpg?crop=0.0000000000000001263187085796,0.4780813953488372,0,0&cropmode=percentage&width=645&height=423&rnd=132581519540000000" alt="image" class="card__img">
+
+            <div class="card__datac">
+                <h2 class="text-titlec">Ramses II as standard-bearer</h2>
+                <span class="card__descriptionc"> The head of a rose granite statue of King Ramses II as standard-bearer </span>
+              
+                <a href="http://en.wikipedia.org/wiki/Ramesses_II"  class="card__buttonc">Read More</a>
+            </div>
+            
+         </article>
+         <article class="card__articlec">
+            <img src="https://egymonuments.gov.eg/media/6363/picture3.jpg?center=0.25190839694656486,0.47560975609756095&mode=crop&width=645&height=423&rnd=132581519540000000" alt="image" class="card__img">
+
+            <div class="card__datac">
+                <h2 class="text-titlec">Wife of Nakhtmin</h2> <!-- same as card title -->
+                <span class="card__descriptionc">One of the most elegantly sculptured women figures from ancient Egypt</span>
+                
+                <a href="http://en.wikipedia.org/wiki/Nakhtmin_(charioteer)"  class="card__buttonc">Read More</a>
+            </div>
+         </article>
+
+      </div>
+      </div>
+
+
+<h1 id="video-title">a tour in sharm el sheikh musuem</h1>
+<video class="videoc" controls>
+    <source src="media/Sharm El Sheikh.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
+
+<a class="locc"><i class="fa-solid fa-location-dot "></i>location</a> 
+  <iframe class="iframec" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28203.19938169473!2d34.31243132369059!3d27.920382567869236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1453379dede99f63%3A0xe6401eff7e5a4c60!2z2YXYqtit2YEg2YjZhdix2YPYsiDYp9mE2K3Yttin2LHYp9iq!5e0!3m2!1sen!2seg!4v1713985438951!5m2!1sen!2seg"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ <h2 id="audio-title">overview on museum</h2>
+  <audio class="audioc" controls autoplay muted>
+    <source src="media/audio.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+  <br><br><br><br><br>
+ <!-- footer -->
+        <footer class="footerG">
+            <div class="logofooterG">
+                <br><br>
+                <img src="images/logo.png" alt="logo">
+                <br>
+                <p>Egyptian Treasures</p> 
+                <br><br>
+            </div>
+            <div class="contactusG">
+                <br><br>
+                <p id="contactG">Contact Us :</p>
+                <br>
+                <p>Email: Info@example.com</p>
+                <p>Phone: +1(123)456-7890</p>
+                <br>
+                <a href="feedbackc.html" onmouseover="over5()" onmouseout="out5()" id="icon5G" class="feedbackG">Feedback</a>
+            </div> 
+        </footer>
+  </div>
+</body>
+</html>
+

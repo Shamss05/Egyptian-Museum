@@ -1,0 +1,180 @@
+/* nav bar style */
+.navG{
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+#logoG{
+    display: flex;
+}
+.navG p{
+    padding: 10px;
+    font-size: x-large;
+}
+.navG ul{
+    display: flex;
+    list-style-type: none;
+}
+.navG ul li{
+    margin-right: 50px;
+}
+.navG ul li a{
+    color: white;
+    text-decoration: none;
+}
+.logoG{
+    width: 50px;
+    height: 50px;
+}
+/* icons style */
+.iconsG img{
+    width: 25px;
+    background-color: #d5d5d5;
+    border-radius: 30px;
+    padding: 5px;
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.7);
+}
+.iconsG{
+    margin-right: 70PX;
+}
+/* icon person style */
+.personiconG{
+    margin-right: 50px;
+}
+/* icon person and search style */
+.personiconG:hover, .searchiconG:hover{
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bodyt-b {
+    background-image: url(../images/hall-statue.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 1450px;
+    /* width: 600px; */
+    overflow-x: hidden;
+}
+
+.h1t-b {
+    margin: 30px;
+    text-align: center;
+    color: #607D8B;
+    text-transform: uppercase;
+}
+
+.background2-b {
+    margin: 10% 20%;
+    width: 800px;
+    height: 1250px;
+    /* background: transparent; */
+    border-radius: 30px 0;
+    box-shadow: -7px 15px 32px 20px #938064cf;
+    padding: 20px;
+    /* backdrop-filter: blur(50px) brightness(125%); */
+    /* position: relative; */
+    background-color: #ebddc9;
+}
+
+.labelt-b {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.inputt-b {
+    position: relative;
+    font-size: 15px;
+    border-radius: 5px 0;
+    outline: 0;
+    height: 30px;
+    border: 0px;
+    padding: 0px 10px;
+}
+
+.textarea-b {
+    text-align: center;
+    border-radius: 10px 0;
+}
+
+.submit-b {
+    font-weight: bold;
+    margin: 15px 80%;
+    width: 120px;
+    height: 50px;
+    /* background-color: floralwhite; */
+    border-radius: 10px 0;
+    font-size: 18px;
+    position: relative;
+    color: #607D8B;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pt-b,
+.at-b {
+    font-size: 25px;
+}
+
+
+.details-b {
+    font-size: 20px;
+}
+
+.loc-b i,
+.h2t-b i {
+    font-size: 25px;
+    color: #607D8B;
+}
+
+.h2t-b,
+.pt-b {
+    color: #607D8B;
+}
+
+.at-b{
+    text-decoration: none;
+}
+
+
+/* footer style */
+.footerG{
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.footerG img{
+    width: 100px;
+    margin-left: 60px;
+}
+.logofooterG p{
+    font-size: xx-large;
+}
+/* contact us style */
+.contactusG{
+    margin-left: 50px;
+}
+#contactG{
+    font-size: 25px;
+    color: goldenrod;
+}
+/* feedback style */
+.feedbackG{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}

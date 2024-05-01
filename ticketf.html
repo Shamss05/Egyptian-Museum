@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ticketf.css">
+    
+    <title>egyptien museum form</title>
+</head>
+
+<body class="qwef">
+    <div>
+        <!-- nav bar -->
+        <nav class="navG">
+            <div id="logoG">
+                <img src="images/logo.png" alt="logo" class="logoG">
+                <p>Egyptian Treasures</p>
+            </div>
+            <div>
+                <ul>
+                <li><a href="index.html" onmouseover="over1()" onmouseout="out1()" id="icon1G">Home</a></li>
+                <li><a href="bookticketz.html" onmouseover="over2()" onmouseout="out2()" id="icon2G">Tickets</a></li>
+                <li><a href="aboutusc.html" onmouseover="over3()" onmouseout="out3()" id="icon3G">About</a></li>
+                <li><a href="logine.html" onmouseover="over4()" onmouseout="out4()" id="icon4G">Login</a></li>
+            </ul>
+        </div>
+        <div class="iconsG">
+            <a href="registerb.html"><img src="images/person_icon.png" alt="person icon" class="personiconG"></a>
+            <a href="searchg.html"><img src="images/search_icon.png" alt="search icon" class="searchiconG"></a>
+            </div>
+        </nav>
+    </div>
+    <br><br><br><br>
+
+    <div class="tef">
+    <input type="text" id="searchInputf" placeholder="Search...">
+<button onclick="search()" id="searchButtonf"> <img src="images/loupe.png" alt="Search"></button>
+
+
+<div class="weaf">
+    <img src="images/brightness.png" id="conf" alt="mode icon" class="modeiconG">
+</div>
+</div>
+
+    <div class="overlayf">
+        <h2>THE EGYPTIAN MUSEUM IN CAIRO</h2>
+        <div id="openingsHourf">
+        <p><strong>'Openings Hour'</strong><br>9:00 am – 5:00 pm every day</p>
+        <p><strong>'Ticket Office'</strong><br>8:30 am - 4:00 pm</p>
+    </div>
+</div>
+    <div class="tablessf">
+        <h3>Egyptian Museum Ticket Prices</h3>
+    </div>
+    <table class="radf">
+        <tr>
+            <th>Category</th>
+            <th>Price (EGP)</th>
+        </tr>
+        <tr>
+            <td> Egyptians Adults</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td> Egyptians Students (with ID)</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td> Other Nationalities Adults</td>
+            <td>450</td>
+        </tr>
+        <tr>
+            <td> Other Nationalities Students </td>
+            <td>230</td>
+        </tr>
+        <tr>
+            <td rowspan="2">audio tours</td>
+            <td>for egyptians: 100</td>
+        </tr>
+        <tr>
+            <td>for other nationalities: 200</td>
+        </tr>
+        <tr>
+            <td>Childrens (under 6)</td>
+            <td>Free</td>
+        </tr>
+
+    </table>
+    </div>
+    <!-- form -->
+    <div class="bannerf">
+        <h2> BOOK YOUR TICKET NOW !</h2>
+        <div class="card-containerf">
+            <div class="card-imgf">
+            </div>
+            <div class="card-contentf">
+                <h3> Reservation</h3>
+                <form id="betaf">
+                    <div class="form-rowf">
+
+                        <input type="email" required placeholder="Email">
+                        <input type="password" required placeholder="Password" min="8" max="12" id="passwordf ">
+                        
+                    </div>
+                    <div class="form-rowf">
+
+                        <input type="text" required placeholder="Phone Number">
+                        <input type="number" required placeholder="Number Of Visitors" min="1">
+                    </div>
+                    <div class="form-rowf">
+
+                        <input type="date" required>
+
+                        <input type="time" required>
+                    </div>
+                    <div class="form-rowf">
+                        <select name="nat" id="natf">
+                            <option value="1">egyptions</option>
+                            <option value="2"> other nationalities</option>
+                        </select>
+                        <select name="type" id="natf">
+                            <option value="1">Adult</option>
+                            <option value="2">Student</option>
+                        </select>
+
+
+                    </div>
+                    <div class="form-rowf">
+                        <label for="payment-method">Payment Method:</label>
+                        <div class="payment-optionsf">
+                            <input type="radio" id="credit-cardf" name="payment-method">
+                            <label for="credit-card"><img src="images/atm-card.png"> Credit Card</label>
+
+                            <input type="radio" id="cashf" name="payment-method">
+                            <label for="cash"><img src="images/payment-method.png"> Cash</label>
+                        </div>
+                    </div>
+                    <div class="form-rowf">
+                        <div class="location-infof">
+                            <img src="images/location.png" alt="Location Icon">
+                            <a id="museum-linkf" href="https://maps.app.goo.gl/XurSkJ91qcqpkZRM7"
+                                target="_blank">Egyptian Museum, Cairo</a>
+                        </div>
+                    </div>
+
+                    <div class="form-rowf">
+                        <input type="reset" value="RESET">
+                        <input id="bookTicketButtonf" type="submit" value="BOOK TICKET" onclick="showAlert()">
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <br> <br> <br> <br> <br>
+    <!-- footer -->
+    <footer class="footerG">
+        <div class="logofooterG">
+            <br><br>
+            <img src="images/logo.png" alt="logo">
+            <br>
+            <p>Egyptian Treasures</p> 
+            <br><br>
+        </div>
+        <div class="contactusG">
+            <br><br>
+            <p id="contactG">Contact Us :</p>
+            <br>
+            <p>Email: Info@example.com</p>
+            <p>Phone: +1(123)456-7890</p>
+            <br>
+            <a href="feedbackc.html" onmouseover="over5()" onmouseout="out5()" id="icon5G" class="feedbackG">Feedback</a>
+        </div> 
+    </footer>
+</div>
+<script src="js/ticketf.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,389 @@
+.museumf {
+    backdrop-filter: blur(10px);
+    /* Apply a blur effect to the background */
+    border-radius: 20px;
+    /* Rounded corners */
+    padding: 5px;
+    /* Padding inside the div */
+    margin: 50px;
+    /* Margin around the div */
+    text-align: left;
+    /* Text alignment */
+    color: beige;
+    /* Text color */
+    box-shadow: 0 8px 10px 4px black;
+    /* Box shadow for a raised effect */
+    line-height: 1.4;
+    /* Line height for text spacing */
+}
+
+.museumf h1,
+h2 {
+    text-align: center;
+}
+
+.museumf p {
+    font-size: large;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.werf{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../mmm.webp") center/cover no-repeat;
+    background-attachment: fixed;
+}
+
+.cardf img {
+    width: 256px;
+    height: 300px;
+}
+
+.cardf {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 8px 10px 4px rgb(110, 69, 7);
+    transition: 0.3s;
+    /* Smooth transition effect */
+    width: 200px;
+    /* Card width */
+    border-radius: 8px;
+    /* Rounded corners */
+    overflow: hidden;
+    /* Hide overflowing content */
+    margin: 10px;
+    /* Margin around the card */
+    position: relative;
+    /* Positioning */
+    left: 25%;
+    /* Offset from the left */
+}
+
+/* On mouse-over, add a deeper shadow */
+.cardf:hover {
+    box-shadow: 0 8px 16px 0 darkred;
+    transform: scale(1.1) translateY(20px);
+}
+
+/* Add some padding inside the card container */
+.containerf {
+    padding: 2px 16px;
+    background-color: rgb(184, 169, 169);
+}
+
+.syadaf {
+    display: flex;
+}
+
+.nabilf {
+    color: beige;
+    position: absolute;
+    top: 850px;
+    right: 77%;
+    font-size: x-large;
+    text-transform: uppercase;
+}
+
+.card-buttonf {
+    /* display: inline-block; */
+    background-color: rgb(232, 229, 226);
+    color: rgb(54, 54, 54);
+    border-radius: 16px;
+    padding: 8px 16px;
+    cursor: pointer;
+
+}
+.card-buttonf:hover{
+    background-color: rgb(220, 231, 166);
+    text-decoration: underline;
+}
+
+.nabilf span {
+    font-size: xx-large;
+    text-shadow: 5px 5px 15px rgba(243, 7, 18, 0.5);
+    color: rgb(244, 244, 131);
+}
+
+.souf {
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.souf p {
+    font-family: 'Georgia', serif;
+    font-size: 48px;
+    color: rgb(255, 234, 234);
+    text-shadow: 5px 5px 15px rgba(243, 7, 18, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(57, 36, 3, 0.993);
+}
+
+.souf p:hover {
+    transform: translateY(-20px);
+}
+
+.newf {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.newf p {
+    font-size: 40px;
+    /* Font size */
+    margin-top: 5%;
+    /* Margin from the top */
+    border: 3px transparent;
+    /* Transparent border */
+    border-radius: 16px;
+    /* Rounded corners */
+    box-shadow: 5px 5px 5px 5px goldenrod;
+    /* Box shadow */
+    width: 40%;
+    /* Width */
+    text-align: center;
+    /* Text alignment */
+    margin-left: 30%;
+    /* Margin from the left */
+    color: beige;
+    /* Text color */
+}
+
+.videof {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.videof video {
+    border: 4x solid transparent;
+    box-shadow: 0 8px 10px 4px rgb(7, 4, 47);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.audiof audio::-webkit-media-controls-panel {
+    background-color: transparent;
+}
+
+
+.audiof audio {
+    box-shadow: 0px 0px 10px rgb(99, 10, 44);
+    border-radius: 30px;
+    margin-left: 10%;
+    cursor: pointer;
+}
+
+.totalf {
+    display: flex;
+    margin-top: 10%;
+    margin-left: 20%;
+    align-items: center;
+}
+
+.aaaf {
+    font-size: 28px;
+    /* margin-top: 15px; */
+    margin-right: 25%;
+    color: white;
+    font-family: 'Georgia', serif;
+    text-shadow: 10px 10px 25px rgb(99, 10, 44);
+}
+
+.linef {
+    margin-top: 25px;
+}
+
+.wif {
+    display: flex;
+    align-items: center;
+}
+
+.tif {
+    margin-top: 10%;
+    margin-left: 20%;
+    color: white;
+    font-size: 28px;
+    text-shadow: 10px 10px 25px rgb(99, 10, 44);
+}
+
+.sif iframe {
+    margin-left: 25%;
+    margin-top: 10%;
+    box-shadow: 0 0 10px 4px rgb(221, 221, 227);
+    box-sizing: border-box;
+}
+
+
+/* nav bar style */
+.navG{
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+#logoG{
+    display: flex;
+}
+.navG p{
+    padding: 10px;
+    font-size: x-large;
+}
+.navG ul{
+    display: flex;
+    list-style-type: none;
+}
+.navG ul li{
+    margin-right: 50px;
+}
+.navG ul li a{
+    color: white;
+    text-decoration: none;
+}
+.logoG{
+    width: 50px;
+    height: 50px;
+}
+/* icons style */
+.iconsG img{
+    width: 25px;
+    background-color: #d5d5d5;
+    border-radius: 30px;
+    padding: 5px;
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.7);
+}
+.iconsG{
+    margin-right: 70PX;
+}
+/* icon person style */
+.personiconG{
+    margin-right: 50px;
+}
+/* icon person and search style */
+.personiconG:hover, .searchiconG:hover{
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+/* footer style */
+.footerG{
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.footerG img{
+    width: 100px;
+    margin-left: 60px;
+}
+.logofooterG p{
+    font-size: xx-large;
+}
+/* contact us style */
+.contactusG{
+    margin-left: 50px;
+}
+#contactG{
+    font-size: 25px;
+    color: goldenrod;
+}
+/* feedback style */
+.feedbackG{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+
+
+/* Style for search input */
+#searchInputf {
+    padding: 8px;
+    border: 1px solid #2c2828;
+    background: linear-gradient(to right, #c1b7b7, beige) ;
+    box-shadow: 0px 0px 10px rgb(14, 8, 8);
+    border-radius: 16px;
+    margin-left: 80%;
+ width: 200px;
+}
+
+/* Style for search button */
+#searchButtonf {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    background-color: #d3d1c2;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Hover effect*/
+#searchButtonf:hover {
+    background-color: #d6b0b0;
+    transform: scale(1.1);
+}
+#searchButtonf img {
+    width: 20px; /* Adjust the size of the icon */
+    height: 20px; 
+}
+
+.terof{
+    display: flex;
+    margin-top: 5px;
+    transition: 3ms;
+}
+.listimgf img{
+    width: 50%;
+    height: 70%;
+    margin-left: 30%;
+}
+.perf {
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 5%;
+    margin-bottom: 20px;
+    color: white;
+}
+.listf{
+    font-size: medium;
+    text-align: center;
+    margin-left: 30%;
+    background-color: #c1b7b7 ;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.slidesf {
+    display: flex;
+}
+
+.slidesf img {
+    width: 20%;
+    height: auto;
+    /* margin-right: 20px; */
+    transition: transform 0.5s ease;
+    border-radius: 16px;
+}
+
+
+.terof img:hover{
+    box-shadow: 0 8px 16px 0 rgb(94, 91, 53);
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TICKETS FORM</title>
+    <link rel="stylesheet" href="css/ticketc.css">
+    <script src="js/all.js"></script>
+</head>
+<body id="BODY2c"> 
+    <div>
+        <!-- nav bar -->
+        <nav class="navG">
+            <div id="logoG">
+                <img src="images/logo.png" alt="logo" class="logoG">
+                <p>Egyptian Treasures</p>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html" onmouseover="over1()" onmouseout="out1()" id="icon1G">Home</a></li>
+                    <li><a href="bookticketz.html" onmouseover="over2()" onmouseout="out2()" id="icon2G">Tickets</a></li>
+                    <li><a href="aboutusc.html" onmouseover="over3()" onmouseout="out3()" id="icon3G">About</a></li>
+                    <li><a href="logine.html" onmouseover="over4()" onmouseout="out4()" id="icon4G">Login</a></li>
+                </ul>
+            </div>
+            <div class="iconsG">
+                <a href="registerb.html"><img src="images/person_icon.png" alt="person icon" class="personiconG"></a>
+                <a href="searchg.html"><img src="images/search_icon.png" alt="search icon" class="searchiconG"></a>
+            </div>
+        </nav>
+</div> 
+    
+<div class="container-allc">
+ <div class="container-timec"> <!-- el instructions and opening hours --> 
+    <h2 class="heading-timec">working hours</h2>
+    <h3 class="heading-hoursc">morning hours</h3>
+    <p>10:00am-1:00pm</p>
+    <h3 class="heading-hoursc">evening hours</h3>
+    <p>5:00pm-11:00pm</p>
+    <hr>
+    <div>
+    <h2 class="heading-ticketc">free tickets</h2>
+     </div> 
+    
+     <div class="listc">
+        <ol>
+            <li>Egyptian and Arab seniors aged 60 and above</li>
+            <li>Egyptians and Arabs with special needs</li>
+            <li>Orphaned children</li>
+            <li>Public school trips for primary and preparatory schools</li>
+        </ol>
+    </div>
+</div>
+<div class="container-formc">
+    <form id="FORM1c">
+       
+        <h2 class="heading-bookingc">Tickets booking</h2>
+        <div class="form-fieldc">
+            <p id="c">your name:</p>
+            <input type="name" placeholder="your name" required oninvalid="this.setCustomValidity('Please enter your name')" oninput="this.setCustomValidity('')" pattern=".{2,}" id="namec">     </div>
+            <div class="form-fieldc">
+            <p id="c">email:</p>
+            <input name="email" id="emailc" type="email" placeholder="ex@gmail.com" required  title="user@domainname.com" >
+            </div>
+            <div class="form-fieldc">
+            <p id="c">phone number:</p>
+            <input type="tel" id="phonec" name="phone" title="must start with 01 followed by 9 numbers" placeholder=" enter your phone number" pattern="01[0-2,5][0-9]{8}">
+            </div>
+            <div >
+            <p id="c">age:</p>
+            <select id="agec"  required class="custom-selectc">
+                <option >adult</option>
+                <option >60+</option>                
+            </select>
+            </div>
+            <div class="form-fieldc" >
+            <p id="c">visitor:</p>
+           <select id="visc"  required class="custom-selectc">
+            <option value="0"  id="visc">foreigner</option>
+            <option value="1" id="visc">egyptian/arab</option>
+            <option value="2" id="visc">student</option>
+            <!-- <option value="3">audio tour</option> -->
+           </select>
+           </div>
+           <div class="form-fieldc" >
+            <p id="c">how many people</p>
+            <input id="maxc"   type="number" max="5" min="0" placeholder="max 5 people">
+            <span id="errorMsg" style="display:none;">Please enter a value between 0 and 5.</span>
+            </div>
+            <div class="form-fieldc">
+            <p id="c">kids</p>
+            <label for="opt1" class="label1c"><span>yes</span></label>
+            <input type="radio" required name="radio" id="opt1c">
+            <label for="opt2" class="label2c"><span>no</span></label>
+            <input type="radio" required name="radio" id="opt2c">
+            </div>
+        <div class="form-fieldc">
+        <p id="c">date</p>
+            <input id="datec"   required type="date" >
+        </div>
+        <div class="form-fieldc">
+            <p id="c">time</p>
+            <input id="timec"  required type="time">
+        </div>
+        <button class="btnc" type="submit" >book now</button>
+        </div>
+        </div>
+        </div>
+        <script type="text/javascript">
+let formc=document.querySelector("#FORM1c");
+let namecc=document.querySelector("#namec");
+let timecc=document.querySelector("#timec");
+let mailc=document.querySelector("#emailc");
+let phonecc=document.querySelector("#phonec");
+let datecc=document.querySelector("#datec");
+let maxcc=document.querySelector("#maxc");
+let viscc=document.querySelector("#visc");
+
+formc.addEventListener("submit",(e)=>{
+   e.preventDefault();
+    addtostorage();
+    namecc.value="";
+    mailc.value="";
+    phonecc.value="";
+    timecc.value="";
+    datecc.value="";
+    maxcc.value="";
+    viscc.value="";
+})
+
+function   addtostorage (){
+    let user=namecc.value;
+    // let pass=password.value;
+    let gmail=mailc.value;
+    let tel=phonecc.value;
+    let time= timecc.value;
+    let date=datecc.value;
+    let max=maxcc.value;
+    let vis=viscc.value;
+
+    
+
+    localStorage.setItem("Username",user);
+    localStorage.setItem("Email",gmail);
+    localStorage.setItem("pn",tel);
+    localStorage.setItem("times", time);
+    localStorage.setItem("date",  date);
+    localStorage.setItem("number of people",max);
+    localStorage.setItem("option index",vis);
+}
+        </script>
+
+    </form>
+</div>
+</div>
+<br><br>
+<div>
+    <table class="table-adjustc ">
+        <tr>
+          <th class="headerc">Ticket prices</th>
+          <th class="headerc">Adult</th>
+          <th  class="headerc">Student</th>
+        </tr>
+        <tr>
+            <td>audio tour</td>
+            <td colspan="2">100EGP for both</td>
+          </tr>
+        <tr>
+          <td>FOREIGNER</td>
+          <td >200EGP</td>
+          <td>100EGP</td>
+        </tr>
+        <tr>
+          <td >EGYPTIAN / ARABS</td>
+          <td>40EGP</td>
+          <td>20EGP</td>
+        </tr> 
+        <table>
+        </div>        
+<br><br><br>
+ <!-- footer -->
+ <footer class="footerG">
+    <div class="logofooterG">
+        <br><br>
+        <img src="images/logo.png" alt="logo">
+        <br>
+        <p>Egyptian Treasures</p> 
+        <br><br>
+    </div>
+    <div class="contactusG">
+        <br><br>
+        <p id="contactG">Contact Us :</p>
+        <br>
+        <p>Email: Info@example.com</p>
+        <p>Phone: +1(123)456-7890</p>
+        <br>
+        <a href="feedbackc.html" onmouseover="over5()" onmouseout="out5()" id="icon5G" class="feedbackG">Feedback</a>
+    </div> 
+</footer>
+</div>
+</body>
+</html>

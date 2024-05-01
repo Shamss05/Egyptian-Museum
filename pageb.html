@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Museum of Egyptian Civilization(NMEC)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/pageb.css">
+    <script src="js/javab.js"></script>
+</head>
+
+<body id="bodyind-b">
+
+    <div>
+        <!-- nav bar -->
+        <nav class="navG">
+            <div id="logoG">
+                <img src="images/logo.png" alt="logo" class="logoG">
+                <p>Egyptian Treasures</p>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html" onmouseover="over1()" onmouseout="out1()" id="icon1G">Home</a></li>
+                    <li><a href="bookticketz.html" onmouseover="over2()" onmouseout="out2()" id="icon2G">Tickets</a></li>
+                    <li><a href="aboutusc.html" onmouseover="over3()" onmouseout="out3()" id="icon3G">About</a></li>
+                    <li><a href="logine.html" onmouseover="over4()" onmouseout="out4()" id="icon4G">Login</a></li>
+                </ul>
+            </div>
+            <div class="iconsG">
+                <a href="registerb.html"><img src="images/person_icon.png" alt="person icon" class="personiconG"></a>
+                <a href="searchg.html"><img src="images/search_icon.png" alt="search icon" class="searchiconG"></a>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="background-b">
+        <div class="title-b">
+            <h1 class="h1-b">National Museum of Egyptian Civilization(NMEC)</h1>
+            <br>
+            <span>The National Museum of Egyptian Civilization is a large museum in the ancient city of Fustat, now
+                part
+                of
+                Cairo, Egypt.
+            </span>
+        </div>
+    </div>
+    <div class="toggle-btnb" id="btnthemeb" onclick="modefunction()"> 
+        <!-- <span>Dark</span> -->
+        <i class="fa-solid fa-circle-half-stroke"></i>
+    </div>
+
+    <div class="search-box">
+        <div class="row">
+            <input type="text" id="myInput" class="inputboxb" placeholder="Search for our antiquities"
+                autocomplete="off" onkeyup="myfunction()">
+            <button class="searchbutb"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="result-boxb">
+            <ul id="myU1">
+                <li><a href="#photo-1-b" class="search-ab">The coffin of King Thutmos</a></li>
+                <li><a href="#photo-2-b" class="search-ab">Ekhnaton Statue</a></li>
+                <li><a href="#photo-3-b" class="search-ab">Nilos</a></li>
+                <li><a href="#photo-4-b" class="search-ab">Nazlet Khater Skeleton</a></li>
+                <li><a href="#photo-5-b" class="search-ab">The Outer Coffin of Queen Ahmose Nefertari</a></li>
+                <li><a href="#photo-6-b" class="search-ab">Baab El Tawba</a></li>
+                <li><a href="#photo-7-b" class="search-ab">Granite statues of the King Merenptah and the goddess Mut</a>
+                </li>
+                <li><a href="#photo-8-b" class="search-ab">Dome</a></li>
+                <li><a href="#" title="Go To Book" class="search-ab">Book your tickets now</a></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <h2 class="about-b">ABOUT</h2>
+    <div class="about1-b">
+        <!-- <img src="the-National-Museum-of-Egyptian-Civilization-5.webp" alt=""> -->
+        <p>The NMEC is the first of its kind in Egypt and the Arab world. It presents the full range of the richness
+            and diversity of Egyptian civilization throughout the ages, from prehistoric times to the present day by
+            focusing on its continuity and stability as demonstrated by its tangible and intangible heritage. The
+            museum’s exceptional collection includes the royal mummies, which are exhibited in a new interactive
+            display using 21st century cutting-edge technology to go beneath the wrappings and reveal their secrets,
+            in addition to shedding light on the rituals and religious beliefs surrounding mummification in ancient
+            Egypt.</p>
+    </div>
+    <div id="container-b">
+        <h3 class="main-b" id="main-b">main gallery</h3>
+        <div class="items-b">
+            <div class="photo-b" id="photo-1-b">
+                <div class="item-b it-1-b">
+                    <img src="images/image00015.jpg" alt="" width="300px" height="400px">
+                    <!-- <div class="item-info-b">
+                        <h4>The coffin of King Thutmose</h4>
+                    </div> -->
+                </div>
+                <span class="info-b i1-b">
+                    The coffin of King Thutmose
+                    Explore the splendid coffin of King Thutmose, adorned with traces of its golden decorations that
+                    once
+                    shone in all their glory. This coffin offers a glimpse into the opulence and grandeur of a
+                    bygone
+                    era.
+                </span>
+            </div>
+            <div class="photo-b" id="photo-2-b">
+                <span class="info-b i2-b" id="ekhnaton">
+                    Ekhnaton Statue
+                    This monumental pillar statue, found in King Ekhnaton's temple at Karnak and dating back to around
+                    1300 BC, stands as an enduring testament to the regal legacy of Egypt's past.
+                </span>
+                <div class="item-b it-2-b">
+                    <img src="images/image00004.jpg" alt="" width="300px" height="400px">
+                    <!-- <div class="item-info-b">
+                        <h4>Ekhnaton Statue</h4>
+                    </div> -->
+                </div>
+            </div>
+            <div class="photo-b" id="photo-3-b">
+                <div class="item-b it-3-b">
+                    <img src="images/image00001.jpg" alt="" width="300px" height="400px">
+                    <!-- <div class="item-info-b">
+                        <h4>Nilos</h4>
+                    </div> -->
+                </div>
+                <span class="info-3-b i3-b">
+                    Nilos
+                    The statue is a personification of the Nile in the Roman Empire and is the origin of the name Nile.
+                    Nilos is usually depicted as an old man surrounded by 16 children, symbolizing the optimal Nile
+                    flooding and the 16 songs sung by children to celebrate the flood. The songs were a tradition that
+                    dated back to as early as 2000 BC. Nilos is always depicted leaning on a hippopotamus which chosen
+                    by the Romans to symbolize Africa, as it reflects the origin of the _Nile River and the wilderness
+                    of life in Africa
+                </span>
+            </div>
+            <div class="photo-b" id="photo-4-b">
+                <span class="info-b i4-b">
+                    Nazlet Khater Skeleton
+                    A remarkable archaeological find, this is the second-oldest Egyptian skeleton, with an astonishing
+                    age of 35,000 years, offering a unique glimpse into Egypt's ancient history.
+                </span>
+                <div class="item-b it-4-b">
+                    <img src="images/nazlet-khater.png" alt="" width="400px" height="300px">
+                    <!-- <div class="item-info-b">
+                        <h4>Nazlet Khater Skeleton</h4>
+                    </div> -->
+                </div>
+            </div>
+            <div class="photo-b" id="photo-5-b">
+                <div class="item-b it-5-b">
+                    <img src="images/Ahmus-nerftari-scaled.jpg" alt="" width="300px" height="300px">
+                    <!-- <div class="item-info-b">
+                        <h4>The Outer Coffin of Queen Ahmose Nefertar</h4>
+                    </div> -->
+                </div>
+                <span class="info-b i5-b">
+                    The Outer Coffin of Queen Ahmose Nefertari
+                    This magnificent coffin once cradled Queen Ahmose Nefertari, the wife of Ahmose and the mother and
+                    co-ruler of Amenhotep I.
+                </span>
+            </div>
+            <div class="photo-b" id="photo-6-b">
+                <span class="info-b i6-b">
+                    Baab El Tawba covering
+                    Behold a precious section of the Kiswa, or covering, adorning the Holy Kaaba in Mecca. This specific
+                    piece has graced the Baab El Tawba, the internal door of the Kaaba, since 1941. A relic of profound
+                    historical and religious significance
+                </span>
+                <div class="item-b it-6-b">
+                    <img src="images/Bab-Al-Tawba-scaled.jpg" alt="" width="300px" height="400px">
+                    <!-- <div class="item-info-b">
+                        <h4>Baab El Tawba covering</h4>
+                    </div> -->
+                </div>
+            </div>
+            <div class="photo-b" id="photo-7-b">
+                <div class="item-b it-7-b">
+                    <img src="images/caption (1).jpg" alt="" width="300px" height="400px">
+                    <!-- <div class="item-info-b">
+                        <h4>Red granite statues of the King Merenptah and the goddess Mut</h4>
+                    </div> -->
+                </div>
+                <span class="info-b i7-b">
+                    Red granite statues of the King Merenptah and the goddess Mut in the NMEC in Cairo, Egypt. Pictured
+                    are red granite statues of the King Merenptah and the goddess Mut in the National Museum of Egyptian
+                    Civilization NMEC in Cairo, Egypt. The statue depicts the king standing in the company of `Mut` the
+                    goddess of Thebes, the patron of kingship and the consort of the god `Amun-Ra`, the King of the
+                    Gods.
+                </span>
+            </div>
+            <div class="photo-b " id="photo-8-b">
+                <span class="info-b i8-b">
+                    Dome found in Baouweet
+                    This supporting dome, discovered in the heart of Baouweet, where a wealth of beautiful Coptic
+                    artifacts resides, serves as an architectural testament to the craftsmanship of the past, preserving
+                    the legacy of a unique cultural and artistic heritage.
+                </span>
+                <div class="item-b it-8-b">
+                    <img src="images/Dome.jpg" alt="" width="500px" height="400px">
+                    <!-- <div class="item-info-b">
+                        <h4>Dome found in Baouweet</h4>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="more-b"></div>
+    <h3 class="more-b">more about the museum</h3>
+    <div class="small-img-b">
+        <div class="small-b">
+            <img src="images/4fb96301-5742-4341-ae31-5965a8acda17-750x490.jpg" alt="">
+            <div class="info-small-b">
+                <h4>Ancient Egyptian ornaments</h4>
+            </div>
+        </div>
+        <div class="small-b s2-b">
+            <img src="images/33-3.jpg" alt="">
+            <div class="info-small-b">
+                <h4>Coffin of King Ramses II</h4>
+            </div>
+        </div>
+        <div class="small-b">
+            <img src="images/31371690-7523-48ef-ad8b-38a8f27803b0.png" alt="">
+            <div class="info-small-b">
+                <h4>A lamp in the name of Sultan Hassan</h4>
+            </div>
+        </div>
+        <div class="small-b s4-b">
+            <img src="images/image00010.jpg" alt="">
+            <div class="info-small-b">
+                <h4>Faience jars of King Tuthmoses IV</h4>
+            </div>
+        </div>
+        <div class="small-b">
+            <img src="images/mahaaaaaa.jpg" alt="">
+            <div class="info-small-b">
+                <h4>Nejim Ankh coffin</h4>
+            </div>
+        </div>
+    </div>
+    <div class="small-img-b">
+        <div class="small-b">
+            <img src="images/mu3c443.jpg" alt="">
+            <div class="info-small-b">
+                <h4>Senndjem Sarcophagus</h4>
+            </div>
+        </div>
+        <div class="small-b s7-b">
+            <img src="images/Chariot.jpg" alt="">
+            <div class="info-small-b">
+                <h4>The Chariot of Tohotmus IV</h4>
+            </div>
+        </div>
+        <div class="small-b s8-b">
+            <img src="images/IMG_3639.jpg" alt="">
+            <div class="info-small-b">
+                <h4>Dush treasure from the Roman Empire 300AD</h4>
+            </div>
+        </div>
+        <div class="small-b" s9>
+            <img src="images/Al-Falaha-scaled.jpg" alt="">
+            <div class="info-small-b">
+                <h4>Al Falaha Statue by Mahmoud Mokhtar</h4>
+            </div>
+        </div>
+        <div class="small-b s10-b">
+            <img src="images/145.jpg" alt="">
+            <div class="info-small-b">
+                <h4>The body of Fir’awn (Rameses II)</h4>
+            </div>
+        </div>
+    </div>
+    <div id="media-b"></div>
+    <div class="media-b">
+        <h5 class="media-h-b" id="video-b">Tour with national GEO</h5>
+        <video controls src="media/vedio.NMEC.mp4" width="500" class="vedio-b"></video>
+    </div>
+    <div>
+        <h5 class="media-h-b" id="audio-b">Audio for a tour guide</h5> <audio controls src="media/videoplayback.weba"
+            class="audio-b"></audio>
+    </div>
+    <div>
+        <table class="content-table-b">
+            <thead>
+                <tr>
+                    <th>Details</th>
+                    <th>Information</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Location</td>
+                    <td>Old Cairo, Egypt</td>
+                </tr>
+                <tr>
+                    <td>Size</td>
+                    <td>490,000 square meters (5,300,000 sq ft)</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Opening Date</td>
+                    <td>Partially opened in 2017</td>
+                <tr>
+                    <td>officially inaugurated on 3 April 2021</td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>Artifacts</td>
+                    <td>Collection of 50,000 artifacts</td>
+                </tr>
+                <tr>
+                    <td>Unique Aspect</td>
+                    <td>First museum in the Arab world focusing on all historical periods of Egyptian civilization</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <iframe class="iframe-b" src="https://nmec.gov.eg/" frameborder="0"></iframe>
+
+
+    <!-- footer -->
+    <footer class="footerG">
+        <div class="logofooterG">
+            <br><br>
+            <img src="images/logo.png" alt="logo">
+            <br>
+            <p>Egyptian Treasures</p>
+            <br><br>
+        </div>
+        <div class="contactusG">
+            <br><br>
+            <p id="contactG">Contact Us :</p>
+            <br>
+            <p>Email: Info@example.com</p>
+            <p>Phone: +1(123)456-7890</p>
+            <br>
+            <a href="feedbackc.html" onmouseover="over5()" onmouseout="out5()" id="icon5G" class="feedbackG">Feedback</a>
+        </div>
+    </footer>
+    </div>
+</body>
+</body>
+
+</html>

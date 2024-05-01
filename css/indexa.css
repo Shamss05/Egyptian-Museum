@@ -1,0 +1,174 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style:oblique;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; 
+  
+
+    
+}
+
+/* Header styles 
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}*/
+
+/*h1 {
+    margin-bottom: 20px;
+}*/
+
+/* Navigation styles */
+.navG {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+
+#logoG{
+    display: flex;
+}
+.navG p{
+    padding: 10px;
+    font-size: x-large;
+}
+.navG ul{
+    display: flex;
+    list-style-type: none;
+}
+.navG ul li{
+    margin-right: 50px;
+}
+.navG ul li a{
+    color: white;
+    text-decoration: none;
+}
+#toggleModeButton{
+   background-color:#d5d5d5d2;
+}
+.logoG{
+    width: 50px;
+    height: 50px;
+}
+/* icons style */
+.iconsG img{
+    width: 25px;
+    background-color: #d5d5d5;
+    border-radius: 30px;
+    padding: 5px;
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.7);
+}
+.iconsG{
+    margin-right: 70PX;
+}
+/* icon person style */
+.imgmoon{
+    width:25px ;
+    height:25px;
+    cursor: pointer;
+    
+}
+.searcha{
+    height: 40px;
+    width: 500px;
+    margin-left: 470px;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border: solid rgba(0, 0, 0, 0.5 alpha);
+    border-radius: 20px;
+    
+}
+#searchMessage{
+    margin-left: 630px;
+    margin-top: 20px;
+}
+/* Dark mode */
+.dark-mode {
+    background-color:burlywood;
+    color: #ffffff;
+    
+}
+.dark-mode .museum {
+    background-color:blanchedalmond; /* Dark background color for the sections */
+}
+
+
+body{
+    background-color: antiquewhite;
+}
+
+/* Museum section styles */
+.museum {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px; 
+    
+    
+}
+
+.museum h2 {
+    margin-bottom: 10px;
+}
+
+.museum img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.museum p {
+    line-height: 1.6;
+}
+
+/* footer style */
+.footerG{
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    margin-top: 150px;
+}
+.footerG img{
+    width: 100px;
+    margin-left: 60px;
+}
+.logofooterG p{
+    font-size: xx-large;
+}
+/* contact us style */
+.contactusG{
+    margin-left: 50px;
+}
+#contactG{
+    font-size: 25px;
+    color: goldenrod;
+}
+/* feedback style */
+.feedbackG{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+}

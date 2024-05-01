@@ -1,0 +1,147 @@
+.heroc{
+    background-color: #f8f8f8;
+}
+/* nav bar style */
+.navG{
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+  }
+  #logoG{
+    display: flex;
+  }
+  .navG p{
+    padding: 10px;
+    font-size: x-large;
+  }
+  .navG ul{
+    display: flex;
+    list-style-type: none;
+  }
+  .navG ul li{
+    margin-right: 50px;
+  }
+  .navG ul li a{
+    color: white;
+    text-decoration: none;
+  }
+  .logoG{
+    width: 50px;
+    height: 50px;
+  }
+  /* icons style */
+  .iconsG img{
+    width: 25px;
+    background-color: #d5d5d5;
+    border-radius: 30px;
+    padding: 5px;
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.7);
+  }
+  .iconsG{
+    margin-right: 70PX;
+  }
+  /* icon person style */
+  .personiconG{
+    margin-right: 50px;
+  }
+  /* icon person and search style */
+  .personiconG:hover, .searchiconG:hover{
+    transform: scale(1.05);
+  z-index: 1;
+  }
+ 
+
+.headingc h1{
+      color:#c19508;
+      font-size: 55px;
+      text-align: center;
+      margin-top: 35px;
+      text-transform: uppercase;
+}
+.containerfc{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:90%;
+    margin:65px auto;
+}
+.hero-contentc{
+    flex:1;
+    width:600px;
+    margin:0px 25px;
+
+
+}
+.hero-contentc h2{
+    font-size: 38px;
+    margin-bottom: 20px;
+    color:#333;
+    text-transform: capitalize;
+}
+
+.hero-contentc p,ol{
+    font-size: 17px;
+    text-transform: capitalize;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #666;
+
+}
+#ol{
+transform: translateX(-30px);
+}
+
+#spanc{
+    font-weight: 600;
+    color: black;
+    font-size: 20px;
+
+
+}
+
+.image-aboutc{
+    flex:1;
+    width:600px;
+    margin:auto;
+     
+}
+#aboutc{
+    width:100%;
+    height:auto;
+    border-radius:15px ;
+}
+/* footer style */
+.footerG{
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+ }
+ .footerG img{
+    width: 100px;
+    margin-left: 60px;
+ }
+ .logofooterG p{
+    font-size: xx-large;
+ }
+ /* contact us style */
+ .contactusG{
+    margin-left: 50px;
+ }
+ #contactG{
+    font-size: 25px;
+    color: goldenrod;
+ }
+ /* feedback style */
+ .feedbackG{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+ }

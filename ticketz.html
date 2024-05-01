@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta chrset="UTF-8">
+        <title>Book your tiket to The Coptic Museum</title>
+        <link rel="stylesheet" href="css/zstyle.css">
+        <script src="js/zjs.js"></script>
+    </head> 
+    <body class="zbody">
+        <div>
+            <!-- nav bar -->
+            <nav class="navG">
+                <div id="logoG">
+                    <img src="images/logo.png" alt="logo" class="logoG">
+                    <p>Egyptian Treasures</p>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="index.html" onmouseover="over1()" onmouseout="out1()" id="icon1G">Home</a></li>
+                        <li><a href="bookticketz.html" onmouseover="over2()" onmouseout="out2()" id="icon2G">Tickets</a></li>
+                        <li><a href="aboutusc.html" onmouseover="over3()" onmouseout="out3()" id="icon3G">About</a></li>
+                        <li><a href="logine.html" onmouseover="over4()" onmouseout="out4()" id="icon4G">Login</a></li>
+                    </ul>
+                </div>
+                <div class="iconsG">
+                    <a href="registerb.html"><img src="images/person_icon.png" alt="person icon" class="personiconG"></a>
+                    <a href="searchg.html"><img src="images/search_icon.png" alt="search icon" class="searchiconG"></a>
+                </div>
+            </nav>
+        </div>
+        <br><br><br><br>
+        <div>
+        <div class="head"><h2>TICKETS</h2></div>
+        <!-- prices -->
+        <table class="ztable1" border="1">
+            <thead>
+                <tr>
+                    <th class="ztable">Nationality</th>
+                    <th class="ztable" colspan="2", class="zpri">price</th>
+                </tr>
+                <tr>
+                    <td class="ztable" rowspan="2">Egyptians</td>
+                    <td class="ztable">adult</td>
+                    <td class="ztable" class="zprice">20EGP</td>
+                </tr>
+                <tr>
+                    <td class="ztable">student</td>
+                    <td class="ztable" class="zprice">10EGP</td>
+                </tr>
+                <tr>
+                    <td class="ztable" rowspan="2">Foriegn</td>
+                    <td class="ztable">adult</td> 
+                    <td class="ztable" class="zprice">230EGP</td>
+                </tr>
+                <tr>
+                    <td class="ztable">student</td>
+                    <td class="ztable" class="zprice">120EGP</td>
+                </tr>
+                <tr>
+                    <td class="ztable" colspan="2">NOTE: audio tour</td>
+                    <td class="ztable">20EGP</td>
+                </tr>
+            </thead>
+        </table>
+        <!-- Opening hours -->
+        <table class="ztable1" class="zt">
+            <tr>
+                <th class="ztable" colspan="2"><h4>Opening Hours</h4></th>
+            </tr>
+            <tr>
+                <th class="ztable">Saturday</th>
+                <th class="ztable" rowspan="6">from 9am to 11pm</th>
+            </tr>
+            <tr>
+                <th class="ztable">Sunday</th>
+            </tr>
+            <tr>
+                <th class="ztable">Monday</th>
+            </tr>
+            <tr>
+                <th class="ztable">Tuesday</th>
+            </tr>
+            <tr>
+                <th class="ztable">Wednesday</th>
+            </tr>
+            <tr>
+                <th class="ztable">Thursday</th>
+            </tr>
+            <tr>
+                <th class="ztable">Friday</th>
+                <th class="ztable">from 10am to 12am</th>
+            </tr>
+        </table>
+        <!-- ticket form -->
+        <div class="zform">
+        <form>
+            <h1>Book Your Ticket!</h1>
+            <div class="z1">
+                <input id="z11" type="text" required placeholder="first name">
+                <input id="z22" type="text" required placeholder="second name">
+            </div>
+            <div class="z2">
+                <input id="z33" type="email" required placeholder="E-mail">
+                <input id="z44" type="password" required placeholder="password">
+            </div>
+            <div class="z3">
+                <input id="z55" type="number" required placeholder="phone number">
+                <input id="z66" required type="date">
+            </div>
+            <div>
+                <select name="type" class="zselect">
+                    <option value="Egyptians-adult">Egyptians-adult</option>
+                    <option value="Egyptians-student">Egyptians-student</option>
+                    <option value="Foriegn-adult">Foriegn-adult</option>
+                    <option value="Foriegn-student">Foriegn-student</option>
+                </select>
+            </div>
+            <div class="zpay">
+                <h3><b>pay way:</b></h3>
+                <input type="radio" id="zVISA" required name="type" value="VISA">
+                <img src="images/8f940450d1455ead6303d4663c5150a4.jpg" class="zimg">
+                <lable for="VISA">VISA</lable>
+                <input type="radio" id="zFAWRY" required name="type" value="FAWRY">
+                <img src="images/WhatsApp Image 2024-04-24 at 00.43.53_972bbf87.jpg" class="zimg">
+                <lable for="FAWRY">FAWRY</lable>
+            </div>
+            <div class="zsudmit">
+                <input type="reset" id="zreset" name="reset" value="reset">
+                <!-- js button -->
+                <!-- onmouseover="zbkjs()" onclick="zsubmit()" -->
+                <input type="submit" id="zsudmit" name="submit" value="sudmit" onmouseover="zbkjs()" onclick="zsubmit()">
+            </div>
+        </div>
+        </form>
+        <div class="zaudio">
+            <audio class="zaudio1" controls src="media/videoplayback.webm"></audio>
+        </div>
+    </div>
+        <!-- footer -->
+        <footer class="footerG">
+            <div class="logofooterG">
+                <br><br>
+                <img src="images/logo.png" alt="logo">
+                <br>
+                <p>Egyptian Treasures</p> 
+                <br><br>
+            </div>
+            <div class="contactusG">
+                <br><br>
+                <p id="contactG">Contact Us :</p>
+                <br>
+                <p>Email: Info@example.com</p>
+                <p>Phone: +1(123)456-7890</p>
+                <br>
+                <a href="feedbackc.html" onmouseover="over5()" onmouseout="out5()" id="icon5G" class="feedbackG">Feedback</a>
+            </div> 
+        </footer>
+    </body>
+</html>
