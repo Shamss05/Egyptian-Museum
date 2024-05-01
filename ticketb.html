@@ -1,191 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Ticket Reservation Form</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/java.js"></script>
+    <title>Tickets</title>
+    <link rel="stylesheet" href="css/ticketb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/javab.js"></script>
 </head>
-<body class="bodyG">
+
+<body class="bodyt-b">
     <div>
-        <!-- nav bar --> 
+        <!-- nav bar -->
         <nav class="navG">
             <div id="logoG">
-                <img src="media/logo.png" alt="logo" class="logoG">
+                <img src="images/logo.png" alt="logo" class="logoG">
                 <p>Egyptian Treasures</p>
             </div>
             <div>
                 <ul>
                     <li><a href="index.html" onmouseover="over1()" onmouseout="out1()" id="icon1G">Home</a></li>
-                    <li><a href="bookticketz.html" onmouseover="over2()" onmouseout="out2()" id="icon2G">Tickets</a></li>
+                    <li><a href="boockticketz.html" onmouseover="over2()" onmouseout="out2()" id="icon2G">Tickets</a></li>
                     <li><a href="aboutusc.html" onmouseover="over3()" onmouseout="out3()" id="icon3G">About</a></li>
                     <li><a href="logine.html" onmouseover="over4()" onmouseout="out4()" id="icon4G">Login</a></li>
                 </ul>
             </div>
             <div class="iconsG">
-                <a href="registerb.html"><img src="media/person_icon.png" alt="person icon" class="personiconG"></a>
-                <a href="searchg.html"><img src="media/search_icon.png" alt="search icon" class="searchiconG"></a>
+                <a href="registerb.html"><img src="images/person_icon.jpg" alt="person icon" class="personiconG"></a>
+                <a href="searchg.html"><img src="images/search_icon.jpg" alt="search icon" class="searchiconG"></a>
             </div>
         </nav>
     </div>
-    <br><br><br><br><br>
-    <!-- body -->
-    <div class="formG">
-        <!-- form -->
-        <form id="formgg" method="post" action="">
-            <!-- personal details form -->
-            <h1>Personal Details</h1>
-            <br><br>
-            <h2>Name</h2>
-            <br>
-            <div class="nameG">
-                <div class="firstnameG">
-                    <label for="firstname">First Name :</label>
-                    <br>
-                    <input type="text" name="firstname" id="firstnameG">
-                    <div class="error"></div>
-                </div>
-                <div class="lastnameG">
-                    <label for="lastName">Last Name :</label>
-                    <br>
-                    <input type="text" name="lastName" id="lastnameG">
-                    <div class="error"></div>
-                </div>
+    <div class="background2-b">
+        <!-- look at this br again! -->
+        <h1 class="h1t-b">Book Your Ticket Now</h1>
+        <br>
+        <form action="" method="post" id="formb" onsubmit="myeventfun(event)">
+            <div class="name-b">
+                <label class="labelt-b">Full Name</label>
+                <input type="text" id="nameb" placeholder="Write Your Name" required class="inputt-b">
+                <div class="error"></div>
             </div>
             <br>
-            <label for="email">Email :</label>
-            <br>
-            <input type="email" placeholder="email@address.com" name="email" id="emailG">
-            <div class="error"></div>
-            <br>
-            <label for="phone">Phone Number :</label>
-            <br>
-            <input type="tel" placeholder="+1(123)456-7890" name="phone">
-            <br>
-            <div class="timeinfoG">
-                <div class="dateG">
-                    <label for="date">Date :</label>
-                    <br>
-                    <input id="small1G" type="date" name="date">
-                </div>
-                <div class="timeG">
-                    <label for="time">Time :</label>
-                    <br>
-                    <input id="small2G" type="time" name="time">
-                </div>
-            </div>
-            <br><br>
-            <hr>
-            <br><br>
-            <!-- tickets form -->
-            <h1 id="ticG">Tickets</h1>
-            <br><br>
-            <div class="ticketsG">
-                <div class="egyptG">
-                    <h2>Egyptions</h2>
-                    <br>
-                    <div class="textG">
-                        <p class="adultG">Adult Ticket</p>
-                        <p>350 EGP</p>
-                    </div>
-                    <label for="quantity">Quantity :</label>
-                    <br>
-                    <input id="small3G" type="tel" name="quantity">
-                    <br><br>
-                    <div class="textG">
-                        <p class="studentG">Student Ticket</p>
-                        <p>200 EGP</p>
-                    </div>
-                    <label for="quantity">Quantity :</label>
-                    <br>
-                    <input id="small4G" type="tel" name="quantity">
-                </div>
-                <div class="otherG">
-                    <h2>Other nationalities</h2>
-                    <br>
-                    <div class="textG">
-                        <p class="adultG">Adult Ticket</p>
-                        <p>1200 EGP</p>
-                    </div>
-                    <label for="quantity">Quantity :</label>
-                    <br>
-                    <input id="small5G" type="tel" name="quantity">
-                    <br><br>
-                    <div class="textG">
-                        <p class="studentG">Student Ticket</p>
-                        <p>750 EGP</p>
-                    </div>
-                    <label for="quantity">Quantity :</label>
-                    <br>
-                    <input id="small6G" type="tel" name="quantity">
-                </div>
-            </div>
-            <br><br>
-            <hr>
-            <br><br>
-            <!-- payment details form -->
-            <h1>Payment Details</h1>
-            <br><br>
-            <p>Accepted Cards :</p>
-            <div class="cardsGG">
-                <img src="media/visa_card.png" alt="visacard">
-                <img src="media/master_card.png" alt="mastercard">
+            <div class="email-b">
+                <label class="labelt-b">Email</label>
+                <input type=" email" name="" id="emailb" placeholder="Email Address" required class="inputt-b" id="emailb">
+                <div class="error"></div>
             </div>
             <br>
-            <label for="card name">Name on Card :</label>
-            <br>
-            <input type="text" name="card name">
-            <br><br>
-            <label for="card number">Credit Card Number :</label>
-            <br>
-            <input type="tel" name="card number">
-            <br><br>
-            <label for="exp month">Exp Month :</label>
-            <br>
-            <input type="text" name="exp month">
-            <br><br>
-            <div class="cardboxG">
-                <div class="yearG">
-                    <label for="exp year">Exp Year :</label>
-                    <br>
-                    <input id="small7G" type="tel" name="exp year">
-                </div>
-                <div class="cvvG">
-                    <label for="cvv">CVV :</label>
-                    <br>
-                    <input id="small8G" type="tel" name="cvv">
-                </div>
+            <div class="phone-b">
+                <label class="labelt-b">Mobile Phone</label>
+                <input type="text" placeholder="Phone Number" minlength="11" maxlength="11" required class="inputt-b" id="phoneb">
+                <div class="error"></div>
             </div>
-            <br><br><br>
-            <div id="submitG">
-                <input type="submit" value="Checkout">
+            <br><br>
+            <p class="pt-b">Choose which day you want to book your ticket:</p>
+            <br>
+            <div>
+                <label class="labelt-b">Date</label>
+                <input type="date" required class="inputt-b" id="dateb">
             </div>
-            <div id="display-box"></div>
+            <br><br>
+            <div>
+                <h2 class="h2t-b"><i class="fa-solid fa-door-open"></i>Opening Time <br> <span>9:00</span>am to
+                    <span>5:00</span>pm
+                </h2>
+                <br>
+                <span class="details-b">
+                    FOREIGNERS:
+                    adults: 500 EGP/ students: 250 EGP
+                    <br>
+                    EGYPTIANS:
+                    adults: 80 EGP/ students: 40 EGP
+                    <br>
+                    Audio tour: 30 EGP
+                    <br>
+                    Free entrance for children under 6 years
+                </span>
+            </div>
+            <br><br>
+            <p class="pt-b">Choose how many tickets you want to buy: </p>
+            <br>
+            <div>
+                <h4>EGYPTIANS:</h4>
+                <br>
+                <label for="num" class="labelt-b">Adult</label>
+                <input id="numberb" type="number" placeholder="Number of EGY Adults" min="0" required class="inputt-b">
+                <label for="num" class="labelt-b">Student</label>
+                <input id="numberb" type="number" placeholder="Number of EGY Stud" min="0" required class="inputt-b">
+                <br>
+                <br>
+                <h4>FOREIGNERS:</h4>
+                <br>
+                <label for="num" class="labelt-b">Adult</label>
+                <input id="numberb" type="number" placeholder="Number of FOREIG Adults" min="0" required
+                    class="inputt-b">
+                <label for="num" class="labelt-b">Student</label>
+                <input id="numberb" type="number" placeholder="Number of FOREIG Stud" min="0" required
+                    class="inputt-b">
+            </div>
+            <br>
+            <div>
+                <p class="pt-b">Pay Method</p>
+                <br>
+                <input class="cash-b" type="radio" name="pay" value="Cash" class="inputt-b" id="payb">
+                <label for="cash" class="labelt-b">Cash</label>
+            </div>
+            <br>
+            <div>
+                <input class="visa-b" type="radio" name="pay" value="Visa" class="inputt-b" id="payb">
+                <label for="visa" class="labelt-b">Visa</label>
+            </div>
+            <br>
+            <div class="loc-b">
+                <i class="fa-solid fa-location-dot"></i>
+                <a id="museum-linkb"
+                    href="https://www.bing.com/maps?osid=e27d3878-f2e1-4a46-bd10-8fe32013dc4d&cp=30.006308~31.241813&lvl=16&pi=0&imgid=37cc94d5-e1f7-4fef-b92a-bf7a461af353&v=2&sV=2&form=S00027"
+                    target="_blank" class="at-b">Location</a>
+                <br><br>
+                <p class="pt-b">El-Fustat Road, Ein Elsira, Cairo</p>
+            </div>
+            <br><br>
+            <textarea name="text" id="text-b" cols="30" rows="5" placeholder="Leave your comment here"
+                class="textarea-b"></textarea>
+            <br>
+            <input type="submit" class="submit-b" id="submitb" value="SUBMIT">
         </form>
     </div>
-    <br><br>
-    <div>
-        <!-- footer -->
-        <footer class="footerG">
-            <div class="logofooterG">
-                <br><br>
-                <img src="media/logo.png" alt="logo">
-                <br>
-                <p>Egyptian Treasures</p> 
-                <br><br>
-            </div>
-            <div class="contactusG">
-                <br><br>
-                <p id="contactG">Contact Us :</p>
-                <br>
-                <p>Email: Info@example.com</p>
-                <p>Phone: +1(123)456-7890</p>
-                <br>
-                <a href="feedbackc.html" onmouseover="over5()" onmouseout="out5()" id="icon5G" class="feedbackG">Feedback</a>
-            </div> 
-        </footer>
-    </div>
+    <!-- footer -->
+    <footer class="footerG">
+        <div class="logofooterG">
+            <br><br>
+            <img src="images/logo.png" alt="logo">
+            <br>
+            <p>Egyptian Treasures</p>
+            <br><br>
+        </div>
+        <div class="contactusG">
+            <br><br>
+            <p id="contactG">Contact Us :</p>
+            <br>
+            <p>Email: Info@example.com</p>
+            <p>Phone: +1(123)456-7890</p>
+            <br>
+            <a href="feedbackc.html" onmouseover="over5()" onmouseout="out5()" id="icon5G" class="feedbackG">Feedback</a>
+        </div>
+    </footer>
 </body>
+
 </html>
